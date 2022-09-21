@@ -16,6 +16,7 @@ document.getElementById("searchBtn").onclick = (e) => {
           // doc.data() is never undefined for query doc snapshots
           // console.log(doc.id, " => ", doc.data());
           console.log(doc.data());
+          content += "<div class=card-deck>";
           content += "<div class=col-sm mb-4>";
           content +=
             "<h1 class=text-center>" + doc.data().propertyName + "</h1>";
@@ -27,6 +28,7 @@ document.getElementById("searchBtn").onclick = (e) => {
           } class=card-img-top a lt=... />`;
           content += "<div class=card-body>";
           content += "<p class=card-text>" + doc.data().description + "</p>";
+          content += "</div>";
           content += "</div>";
           content += "</div>";
           content += "</div>";

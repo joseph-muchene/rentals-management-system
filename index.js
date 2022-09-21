@@ -1,8 +1,10 @@
 import express from "express";
 const app = express();
-
 import { collection, getDocs, doc, setDoc } from "firebase/firestore";
 import { db } from "./config.js";
+
+import path from "path";
+const __dirname = path.resolve();
 // update each document on due
 // current date
 function getDueDate(date) {
@@ -73,6 +75,9 @@ app.get("/login", (req, res) => {
 
 app.get("/register", (req, res) => {
   return res.sendFile(__dirname + "/public/register.html");
+});
+app.get("/main.css", (req, res) => {
+  return res.sendFile(__dirname + "/public/css/main.css");
 });
 
 app.get("/manage", (req, res) => {
