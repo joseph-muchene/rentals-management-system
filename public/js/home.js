@@ -57,7 +57,7 @@ db.collection("properties")
         doc.data().propertyPhoto
           ? doc.data().propertyPhoto
           : "https://cf.bstatic.com/xdata/images/hotel/max1024x768/318461498.jpg?k=6e0c5f10dada0e171e6359e83a4435206b659c2f3fd1aa44610fbdab8b1f19ed&o=&hp=1"
-      } class=img-fluid style="height:60vh" a lt=... />`;
+      } class=img-fluid style="height:60vh" alt=... />`;
       content += "<div class=card-body>";
       content += "<p class=card-text>" + doc.data().description + "</p>";
       content += "</div>";
